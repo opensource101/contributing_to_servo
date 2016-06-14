@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>How Browser works</title>
+    <meta name="description" content="How Browser works">
+    <meta name="author" content="Arvind Ravulaavru">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+    if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+
+    </script>
+    <style type="text/css">
+    .black {
+        color: #333;
+    }
+
+    p {
+        font-size: 60px;
+    }
+    
+    .underline {
+        text-decoration: underline !important;
+    }
+    </style>
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    <base target="_blank">
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section data-background="#fff">
+                <h2>Contributing to <br><br> Servo Browser Engine</h2>
+                <br/>
+                <br>
+                <br>
+                <p>A quick start</p>
+                <p>July 2, 2016</p>
+            </section>
+            <section data-background="#fff">
+                <h6>Me!</h6><hr>
+                <img style="width:96px;height:96px" src="https://avatars3.githubusercontent.com/u/5155745?v=3&s=460" alt="">
+                <p>@creativcoder</p>
+                <a href="http://twitter.com/creativcoder" target="_blank" class="image">
+                    <img src="imgs/twitter.png">
+                </a>
+                <a href="http://github.com/creativcoder" target="_blank" class="image">
+                    <img src="imgs/github.png">
+                </a>
+                <br>
+                <p>Open source guy, Rust Enthusiast, loves answering questions about Rust at Quora.
+                
+                Currently a contributer at</p>
+                at <a href="https://github.com/servo/servo" target="_blank" class="image black underline">Servo Browser Engine</a>
+                <br>from Mozilla
+                <br>
+                blogs at : <a href="http://creativcoder.xyz" target="_blank" class="image black">
+                creativcoder.xyz</a>
+                </p>
+            </section>
+            <section data-background="#fff">
+            <p>Motivations behind</p>
+            <br>
+            <p>Servo Project</p>
+                
+            </section>
+            <section data-background="#fff">
+            <p>Fast Rendering and Layout (Parellism at many levels)</p>
+            <p>Less buggy which means less vulnerable to exploits (Thanks to Rust)</p>
+            <p>Embeddable engine with low memory footprint</p>
+            <p>Lesser power consumption and memory utilization</p>
+            </section>
+            <section data-background="#fff">
+            How to get started contributing ? 
+            <br>
+            <br>
+            Servo Starters
+                <!-- <img style="width:700px" src="http://taligarsiel.com/Projects/layers.png" alt=""> -->
+            </section>
+            <section data-background="#fff">
+           
+                <p>Ingredients to Contribute</p>
+                <ul>
+                    <li>Read web platform feature Spec</li>
+                    <li>Write respective binding code, from the WebIDL spec</li>
+                    <li>Write respective Rust code</li>
+                    <li>Write a web platform test if applicable</li>
+                    <li>Get mentioned on This week in Servo. Yay! :D</li>
+                </ul>
+            </section>
+            <section data-background="#fff">
+                <p>Read web platform feature Spec</p>
+            </section>
+            
+            <section data-background="#fff">
+                <p>Write respective binding code, from the WebIDL spec</p>
+            </section>
+
+            <section data-background="#fff">
+                <p>Write glue rust code</p>
+            </section>
+
+            <section data-background="#fff">
+                <p>Write a web platform test if applicable</p>
+            </section>
+
+            <section data-background="#fff">
+                <p>Get mentioned on This week in Servo. Yay! :D</p>
+            </section>
+
+            <section data-background="#fff">
+            So that's all there, to it!
+                <br><br><br>
+                <p>So, Questions ?</p>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }]
+    });
+
+        function isJson(str) {
+            try {
+                JSON.parse(str);
+            } catch(e) {
+                return false;
+            }
+            return true;
+        }
+
+        var ws;
+        var isChangedByMe;
+
+        function init() {
+            ws = new WebSocket('ws://localhost:9001');
+            ws.onopen = function(evt) {
+                ws.send('connection open');
+            };
+            ws.onmessage = function(msg) {
+                console.log('recevied', msg);
+                if (isJson(msg.data)) {
+                    var obj = JSON.parse(msg.data);
+                    console.log('changing slide to', obj.indexh);
+                    isChangedByMe = false;
+                    Reveal.slide(obj.indexh, obj.indexv);
+                }
+            };
+            Reveal.addEventListener('slidechanged', function(evt){
+                if(isChangedByMe) {
+                    ws.send(JSON.stringify({'indexh':evt.indexh, 'indexv':evt.indexv}));
+                    console.log('sending slide data', evt.indexh);
+                    isChangedByMe = true;
+                }
+            })
+        }
+
+        window.addEventListener('load',init,false);
+    </script>
+</body>
+
+</html>

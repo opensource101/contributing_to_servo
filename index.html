@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Contributing to Servo</title>
-    <meta name="description" content="How Browser works">
-    <meta name="author" content="Arvind Ravulaavru">
+    <meta name="description" content="Get your hands rusty for Servo">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu|Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -49,11 +48,15 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section data-background="#fff">
-                <p style="font-size: 90px">Contributing to <br> Servo Browser Engine</p>
+                <p style="font-size: 90px">Contributing to <br> Servo</p>
                 <br/>
                 <br>
-                <img style="width: 90px;height: 60px" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Mozilla_dinosaur_head_logo.png" alt=""><p>Mozilla</p>
+                <img style="width: 120px;height: 90px" 
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Mozilla_dinosaur_head_logo.png"
+                alt=""><p>Mozilla</p>
+
                 <p>July 2, 2016</p>
+                <a style="font-size: 20px" href="https://www.facebook.com/groups/RustBLR">@Rust Group Bangalore (RGB)</p>
             </section>
             <section data-background="#fff">
                 <h6>Me!</h6>
@@ -76,25 +79,25 @@
                 </p>
             </section>
             <section data-background="#fff">
-            <p style="font-size: 60px">Motivations behind
+            <p style="font-size: 90px">What is Servo ? 
             <br>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Tom_Servo.JPG" alt="">
-            <br>
-            the Servo Project</p>
+            <img style="width: 200px;height: 200px" src="https://pbs.twimg.com/profile_images/621055164510658560/Cj-wqR55.png" alt="">
+<br>
+             and Motivations</p>
+             behind the project.
+            </section>
+
+            <section data-background="#fff" id="motivations">
+            <p> <img src="http://www.iconsfind.com/wp-content/uploads/2015/10/20151012_561baa10b0d4e.png" alt="">Fast Rendering and Layout</p>
+            
+            <p> <img src="http://freeflaticons.com/wp-content/uploads/2014/09/speed-copy-1411908334gkn48.png" alt="">Low memory footprint and lesser power consumption</p>
+
+            <p> <img src="http://imgc.allpostersimages.com/images/P-473-488-90/75/7571/MXJD300Z/posters/venimo-set-of-flat-icons-mobile-phone-laptop.jpg" alt="">Embeddable engine compatible with Chrome Embedded Framework</p>
+
+            <p> <img src="https://cdn3.iconfinder.com/data/icons/web-development-3/512/security_lock_protect_internet_padlock_secure_flat_icon-512.png" alt="">Making browser engine less vulnerable to exploits ( thanks to Rust )</p>
             </section>
 
             <section data-background="#fff">
-            <p>Fast Rendering and Layout</p>
-            <hr>
-            <p>Low memory footprint and lesser power consumption</p>
-            <hr>
-            <p>Embeddable engine compatible with Chrome Embedded Framework</p>
-            <hr>
-            <p>Making browser engine less vulnerable to exploits ( thanks to Rust )</p>
-            </section>
-
-            <section data-background="#fff">
-            <p>Overview of Servo's architecture </p>
             <img src="http://zdnet3.cbsistatic.com/hub/i/r/2014/10/04/0c7dd88b-4be5-11e4-b6a0-d4ae52e95e57/resize/770xauto/c458bd94ebc07e02e52ddf7aec4483af/servo-tasks.png" alt="">
             </section>
 
@@ -103,8 +106,18 @@
             <img src="" alt="">
             </section>
 
+            <section data-background="#fff" id="points">
+            <p>Why contribute ?</p>
+            <img src="" alt="">
+            <h6>Write real world rust code</h6>
+            <hr>
+            <h6>Better understanding of the Web platform</h6>
+            <hr>
+            <h6>Appreciate how a browser engine works</h6>
+            </section>
+
             <section data-background="#fff">
-            <p>How to get started contributing ? </p>
+            <p>How to get started with contribution </p>
             <br>
             <img src="imgs/servo_starters.png" alt=""> 
             <a style="font-style: none" href="https://starters.servo.org/">Very Easy! => Servo Starters</a>
@@ -120,41 +133,40 @@
                     <li>Get mentioned on "This week in Servo" Yay! :D</li>
                 </ul>
             </section>
-            <section data-background="#fff">
+            <section data-background="#fff" id="pointss">
                 <p>Read web platform feature Spec</p>
                 <a style="font-size: 20px" href="https://html.spec.whatwg.org/multipage/webappapis.html#navigatorlanguage">https://html.spec.whatwg.org/multipage/webappapis.html#navigatorlanguage</a>
                 <img style="max-width: 110%" src="imgs/navigator.png" alt="">
             </section>
             
-            <section data-background="#fff">
+            <section data-background="#fff" id="pointss">
                 <p>Add WebIDL interface definition and generate glue code</p>
                 <img style="max-width: 110%" src="imgs/webidl.png" alt="">
             </section>
 
-            <section data-background="#fff">
+            <section data-background="#fff" id="pointss">
                 <p>Write related rust code</p>
                 <img style="max-width: 110%" src="imgs/rust_code.png" alt="">
             </section>
 
-            <section data-background="#fff">
+            <section data-background="#fff" id="pointss">
                 <p>Write a web platform test if applicable</p>
             </section>
 
-            <section data-background="#fff">
+            <section data-background="#fff" id="pointss">
                 <p>Get mentioned on This week in Servo. Yay! :D</p>
             </section>
 
-            <section data-background="#fff">
+            <section data-background="#fff" id="pointss">
             Other ways to get involved...
                 <br><br><br>
-                <p>Try Servo, in real world and File issues</p>
-                <p>Improve Documentation</p>
-                <p>Improve our build system<code>'Mach'</code> </p>
-
+                <p>* Try Servo, in real world and File issues</p>
+                <p>* Improve Documentation</p>
+                <p>* Improve our build system<code>'Mach'</code> </p>
             </section>
 
-            <section data-background="#fff">
-            So get Rusty and contribute to Servo :)
+            <section data-background="#fff" id="pointss">
+                <p>So get Rusty and start contributing to Servo :)</p>
                 <br><br><br>
                 <p>Thanks; Questions ?</p>
             </section>
